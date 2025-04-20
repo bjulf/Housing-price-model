@@ -1,10 +1,10 @@
 import pandas as pd
 
-market_trans_df = pd.read_csv(r'C:\Users\Bjorn\OneDrive - ZEM AS\Studier\Multivariate Data-Analysis\DA-3\Processed data\market_transactions_cleaned.csv')
+market_trans_df = pd.read_csv(r'..\Processed data\market_transactions_cleaned.csv')
 
 
 # Load the Address_features dataset
-address_features = pd.read_csv(r'C:\Users\Bjorn\OneDrive - ZEM AS\Studier\Multivariate Data-Analysis\DA-3\Processed data\Address_cleaned.csv')
+address_features = pd.read_csv(r'..\Processed data\Address_cleaned.csv')
 
 # Merge the datasets on 'address_id' and 'id'
 df = market_trans_df.merge(address_features, left_on='address_id', right_on='id', how='left')
@@ -45,7 +45,7 @@ for col in df.columns:
 print(f"\nDataset Shape: {df.shape} (rows x columns)")
 
 
-df.to_csv(r'C:\Users\Bjorn\OneDrive - ZEM AS\Studier\Multivariate Data-Analysis\DA-3\Processed data\combined_data.csv', index=False)
+df.to_csv(r'..\Processed data\combined_data.csv', index=False)
 
 
 

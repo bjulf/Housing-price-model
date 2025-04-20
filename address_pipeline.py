@@ -2,7 +2,7 @@ import pandas as pd
 
 
 # Load the CSV file into a DataFrame
-df = pd.read_csv(r'C:\Users\Bjorn\OneDrive - ZEM AS\Studier\Multivariate Data-Analysis\DA-3\raw_data_2024_10\address.csv')
+df = pd.read_csv(r'..\raw_data_2024_10\address.csv')
 
 # print(df['poststed'].unique())
 # print(df['bygningstypekode'].unique())
@@ -222,5 +222,5 @@ else:
 
 
 # Save the modified DataFrame back to a CSV file
-df.to_csv(r'C:\Users\Bjorn\OneDrive - ZEM AS\Studier\Multivariate Data-Analysis\DA-3\Processed data\Address_cleaned.csv', index=False)
+df.to_csv(r'..\Processed data\Address_cleaned.csv', index=False)
 
