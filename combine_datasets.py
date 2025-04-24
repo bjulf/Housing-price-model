@@ -44,8 +44,10 @@ for col in df.columns:
 # Print dataset dimensions
 print(f"\nDataset Shape: {df.shape} (rows x columns)")
 
+# Turn bool to int
+df = df * 1
 
-df.to_csv(r'..\Processed data\combined_data.csv', index=False)
+df.to_csv(r'..\Processed data\combined_data.csv', index=False, sep=";", decimal=",")
 
 
 

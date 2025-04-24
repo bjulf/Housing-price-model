@@ -12,7 +12,7 @@ df['official_date'] = pd.to_datetime(df['official_date'], errors='coerce')
 df = df.dropna(subset=['official_date', 'address_id', 'official_price'])
 
 #Remove any housing sold before 2019
-df = df[df['official_date'] > '2019-12-31']
+df = df[df['official_date'] > '2022-12-31']
 
 """
 # Add also shared_cost_monthly and municipal_charges_yearly
@@ -54,7 +54,6 @@ if df.isnull().values.any():
     print(df.isnull().sum())
 else:
     print("No NaN values found in the dataset.")
-
 
 #save the modified DataFrame back to a CSV file
 df.to_csv(r'..\Processed data\market_transactions_cleaned.csv', index=False)
