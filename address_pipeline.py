@@ -82,10 +82,10 @@ bygningstypekode_labels = {
     122: 'Tomannsbolig_horisontaldelt',
     131: 'Rekkehus',
     136: 'Andre_smahus',
-    141: 'Stort_frittliggende_2etg',
-    142: 'Stort_frittliggende_3_4etg',
-    143: 'Stort_frittliggende_5etg_eller_mer',
-    146: 'Store_sammenb_5etg_eller_mer'
+    141: 'Leilighetsbygg',
+    142: 'Leilighetsbygg',
+    143: 'Leilighetsbygg',
+    146: 'Leilighetsbygg'
 }
 
 # Map 'bygningstypekode' to the corresponding labels
@@ -222,5 +222,5 @@ else:
 
 
 # Save the modified DataFrame back to a CSV file
-df.to_csv(r'..\Processed data\Address_cleaned.csv', index=False)
+df.to_csv(r'..\Processed data 2\Address_cleaned.csv', index=False)
 
